@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./imagens/fundo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  max-width: 1366px;
+  height: 100vh;
+  padding: 15px;
+}
+
+.placar {
+  max-width: 500px;
+  min-height: 100px;
+  background-color: #0e1447;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 25px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 0.5px #040829;
+}
+
+.result {
+  max-width: 500px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time1, .time2 {
+  width: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time1 span, .time2 span {
+  font-weight: bold;
+  font-family: inter;
+  font-size: 14px;
+  color: white;
+}
+
+.time1-escudo, .time2-escudo {
+  width: 70px;
+  height: 70px;
+}
+
+.time1-escudo img, .time2-escudo img {
+  width: 100%;
+}
+
+.math-result {
+  width: 100%;
+  height: 90px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: inter;
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+}
+
+p {
+  font-family: inter;
+  font-weight: normal;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 22px;
+}
+.gols-minutes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.gols1, .gols2 {
+  width: 140px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.gols2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+span {
+  line-height: 1.5;
+}
+
+.gols2 span {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.gols1, .gols2 span {
+  font-family: inter;
+  font-size: 13px;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  .placar {
+    padding: 15px;
+  }
+ 
+}
+
+@media screen and (max-height: 400px) {
+  .placar {
+    margin-top: 15px;
+  }
+  .app {
+    height: 100%;
+  }
+}
